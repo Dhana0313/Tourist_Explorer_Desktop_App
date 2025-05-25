@@ -13,7 +13,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         primaryStage = stage;
-        changeScene("LoginView.fxml");
+        changeScene("view/LoginView.fxml");
     }
 
     public static void changeScene(String fxmlFile) throws Exception {

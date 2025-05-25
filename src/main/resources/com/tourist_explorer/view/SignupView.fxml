@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.tourist_explorer.controllers.SignupController"
-            prefWidth="500" prefHeight="650"
+            prefWidth="1280" prefHeight="720"
             style="-fx-background-color: linear-gradient(to bottom right, #56CCF2, #2F80ED); -fx-padding: 30;">
 
     <VBox alignment="CENTER" spacing="20" layoutX="25" layoutY="20" prefWidth="450">
@@ -14,7 +14,7 @@
         <!-- Logo or image -->
         <ImageView fitWidth="120" fitHeight="120">
             <image>
-                <Image url="@image2.jpg" preserveRatio="true"/>
+                <Image url="@../images/image2.jpg" preserveRatio="true"/>
             </image>
         </ImageView>
 
