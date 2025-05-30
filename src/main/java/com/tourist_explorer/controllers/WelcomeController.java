@@ -1,4 +1,4 @@
-package com.example.welcome2;
+package com.tourist_explorer.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

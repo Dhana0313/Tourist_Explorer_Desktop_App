@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<StackPane prefHeight="400.0" prefWidth="600.0" stylesheets="@src/main/resources/com/tourist_explorer/css/Backgroundstyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/Backgroundstyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
 
    <!-- Semi-transparent overlay -->
    <Rectangle fill="rgba(0,0,0,0.4)" height="1080" width="1920" />
