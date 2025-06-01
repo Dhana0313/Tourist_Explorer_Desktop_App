@@ -1,43 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.tourist_explorer.controllers.SignupController"
-            prefWidth="1280" prefHeight="720"
-            style="-fx-background-color: linear-gradient(to bottom right, #56CCF2, #2F80ED); -fx-padding: 30;">
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-    <VBox alignment="CENTER" spacing="20" layoutX="25" layoutY="20" prefWidth="450">
+<AnchorPane prefHeight="720" prefWidth="1280" style="-fx-background-color: linear-gradient(to bottom right, #56CCF2, #2F80ED); -fx-padding: 30;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.tourist_explorer.controllers.SignupController">
+
+    <VBox alignment="CENTER" layoutX="75.0" layoutY="27.0" prefHeight="633.0" prefWidth="450" spacing="20">
 
         <!-- Logo or image -->
-        <ImageView fitWidth="120" fitHeight="120">
+        <ImageView fitHeight="120" fitWidth="120">
             <image>
-                <Image url="@../images/image2.jpg" preserveRatio="true"/>
+                <Image preserveRatio="true" url="@../images/image2.jpg" />
             </image>
         </ImageView>
 
-        <Label text="Create Your Boat Booking Account"
-               style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: white;" />
+        <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: white;" text="Create Your Boat Booking Account" />
 
         <VBox spacing="15">
-            <TextField fx:id="fullNameField" promptText="Full Name"
-                       style="-fx-background-radius: 10; -fx-padding: 10;" />
-            <TextField fx:id="usernameField" promptText="Username"
-                       style="-fx-background-radius: 10; -fx-padding: 10;" />
-            <TextField fx:id="emailField" promptText="Email"
-                       style="-fx-background-radius: 10; -fx-padding: 10;" />
-            <PasswordField fx:id="passwordField" promptText="Password"
-                           style="-fx-background-radius: 10; -fx-padding: 10;" />
-            <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password"
-                           style="-fx-background-radius: 10; -fx-padding: 10;" />
+            <TextField fx:id="fullNameField" promptText="Full Name" style="-fx-background-radius: 10; -fx-padding: 10;" />
+            <TextField fx:id="usernameField" promptText="Username" style="-fx-background-radius: 10; -fx-padding: 10;" />
+            <TextField fx:id="emailField" promptText="Email" style="-fx-background-radius: 10; -fx-padding: 10;" />
+            <PasswordField fx:id="passwordField" promptText="Password" style="-fx-background-radius: 10; -fx-padding: 10;" />
+            <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password" style="-fx-background-radius: 10; -fx-padding: 10;" />
         </VBox>
 
-        <Button text="Sign Up" onAction="#handleSignup"
-                style="-fx-background-color: #27ae60; -fx-background-radius: 20; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 40;" />
+        <Button onAction="#handleSignup" style="-fx-background-color: #27ae60; -fx-background-radius: 20; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 40;" text="Sign Up" />
 
-        <Hyperlink text="Already have an account? Log in" onAction="#goToLogin"
-                   style="-fx-text-fill: white; -fx-underline: false;" />
+        <Hyperlink onAction="#goToLogin" style="-fx-text-fill: white; -fx-underline: false;" text="Already have an account? Log in" />
     </VBox>
+   <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="73.0" text="Back" onAction="#goBackContent"/>
 </AnchorPane>

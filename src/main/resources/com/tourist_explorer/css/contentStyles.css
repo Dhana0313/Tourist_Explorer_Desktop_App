@@ -1,0 +1,14 @@
+.labelAdd{
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-padding: 6px 10px;
+    -fx-background-radius: 5;
+}
+
+.content-background{
+    -fx-background-image: url("../images/content_background.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}

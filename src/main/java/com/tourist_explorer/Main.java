@@ -21,7 +21,16 @@ public class Main extends Application {
         Parent pane = FXMLLoader.load(Main.class.getResource(fxmlFile));
         primaryStage.setScene(new Scene(pane));
         primaryStage.setTitle("Boat Booking System");
-        primaryStage.setWidth(1480);
+        primaryStage.setWidth(1460);
+        primaryStage.setHeight(820);
+        primaryStage.show();
+    }
+
+    public static void changLogSign(String fxmlFile) throws Exception {
+        Parent pane = FXMLLoader.load(Main.class.getResource(fxmlFile));
+        primaryStage.setScene(new Scene(pane));
+        primaryStage.setTitle("Boat Booking System");
+        primaryStage.setWidth(600);
         primaryStage.setHeight(820);
         primaryStage.show();
     }
