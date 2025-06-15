@@ -26,7 +26,7 @@
                <image>
                   <Image url="@../images/download (2).jpeg" />
                </image></ImageView>
-            <ImageView fitHeight="184.0" fitWidth="282.0" layoutX="155.0" layoutY="126.0" pickOnBounds="true">
+            <ImageView fitHeight="184.0" fitWidth="282.0" layoutX="155.0" layoutY="126.0" pickOnBounds="true" onMouseClicked="#pageLoad">
                <image>
                   <Image url="@../images/download (6).jpeg" />
                </image></ImageView>
@@ -87,7 +87,7 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="41.0" layoutX="1066.0" layoutY="325.0" opacity="0.75" stroke="BLACK" strokeDashOffset="1.0" strokeType="INSIDE" strokeWidth="0.0" width="283.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="41.0" layoutX="609.0" layoutY="326.0" opacity="0.75" stroke="BLACK" strokeDashOffset="1.0" strokeType="INSIDE" strokeWidth="0.0" width="283.0" />
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="41.0" layoutX="155.0" layoutY="650.0" opacity="0.75" stroke="BLACK" strokeDashOffset="1.0" strokeType="INSIDE" strokeWidth="0.0" width="283.0" />
-            <Label fx:id="mirissabtn" layoutX="255.0" layoutY="326.0" text="CHECK" textFill="WHITE">
+            <Label fx:id="mirissabtn" layoutX="207.0" layoutY="326.0" prefHeight="40.0" prefWidth="196.0" text="      CHECK" textFill="WHITE">
                <font>
                   <Font name="Bodoni MT Bold" size="28.0" />
                </font>
@@ -95,7 +95,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Label>
-            <Label fx:id="nilwellabtn" layoutX="1163.0" layoutY="326.0" text="CHECK" textFill="WHITE">
+            <Label fx:id="nilwellabtn" layoutX="1163.0" layoutY="326.0" text="CHECK" textFill="WHITE" >
                <font>
                   <Font name="Bodoni MT Bold" size="28.0" />
                </font>
@@ -103,7 +103,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Label>
-            <Label fx:id="thalpebtn" layoutX="705.0" layoutY="327.0" text="CHECK" textFill="WHITE">
+            <Label fx:id="thalpebtn" layoutX="614.0" layoutY="327.0" prefHeight="40.0" prefWidth="273.0" text="             CHECK" textFill="WHITE">
                <font>
                   <Font name="Bodoni MT Bold" size="28.0" />
                </font>
@@ -144,13 +144,13 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <ImageView fitHeight="71.0" fitWidth="70.0" layoutX="1273.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#login">
+            <ImageView fitHeight="71.0" fitWidth="70.0" layoutX="1273.0" layoutY="25.0" onMouseClicked="#login" pickOnBounds="true" preserveRatio="true">
                <Image url="@../images/login.jpg" />
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <ImageView fitHeight="71.0" fitWidth="70.0" layoutX="1366.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#signUp">
+            <ImageView fitHeight="71.0" fitWidth="70.0" layoutX="1366.0" layoutY="25.0" onMouseClicked="#signUp" pickOnBounds="true" preserveRatio="true">
                <Image url="@../images/reg.jpg" />
                <cursor>
                   <Cursor fx:constant="HAND" />

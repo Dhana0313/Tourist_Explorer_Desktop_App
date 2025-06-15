@@ -28,4 +28,13 @@ public class ContentController {
             e.printStackTrace();
         }
     }
+
+    public void pageLoad(MouseEvent mouseEvent) {
+        try{
+            Main.changeScene("view/Mirissa.fxml");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
 }
