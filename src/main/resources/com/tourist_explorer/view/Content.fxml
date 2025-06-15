@@ -1,61 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1460.0" styleClass="content-background" stylesheets="@../css/contentStyles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tourist_explorer.controllers.ContentController">
-
-    <StackPane layoutX="201.0" layoutY="152.0" prefHeight="187.0" prefWidth="223.0">
-        <ImageView fitHeight="189.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true">
-            <Image url="@../images/Unawatuna.jpg" />
-        </ImageView>
-        <Label styleClass="labelAdd" text="Unawatuna beach" />
-    </StackPane>
-
-   <StackPane layoutX="576.0" layoutY="152.0" prefHeight="187.0" prefWidth="223.0">
-        <ImageView fitHeight="190.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
-            <Image url="@../images/Mirissa.jpg" />
-        </ImageView>
-       <Label layoutX="393.0" layoutY="412.0" styleClass="labelAdd" text="Mirissa" />
-   </StackPane>
-
-   <StackPane layoutX="982.0" layoutY="152.0" prefHeight="195.0" prefWidth="252.0">
-       <ImageView fitHeight="191.0" fitWidth="332.0" pickOnBounds="true" preserveRatio="true">
-           <Image url="@../images/Hirikatiya.jpg" />
-       </ImageView>
-       <Label styleClass="labelAdd" text="Hirikatiya" />
-   </StackPane>
-
-   <StackPane layoutX="197.0" layoutY="464.0" prefHeight="204.0" prefWidth="255.0">
-       <ImageView fitHeight="173.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true">
-           <Image url="@../images/Thalpe.jpg" />
-       </ImageView>
-       <Label styleClass="labelAdd" text="Thalpe" />
-   </StackPane>
-   <StackPane layoutX="576.0" layoutY="472.0" prefHeight="187.0" prefWidth="223.0">
-      <children>
-         <ImageView fitHeight="189.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-               <Image url="@../images/Unawatuna.jpg" />
-            </image>
-         </ImageView>
-         <Label styleClass="labelAdd" text="Unawatuna beach" />
-      </children>
-   </StackPane>
-   <Button layoutX="1358.0" layoutY="6.0" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="96.0" text="Login" />
-   <Button layoutX="1270.0" layoutY="6.0" mnemonicParsing="false" onAction="#signUp" prefHeight="36.0" prefWidth="88.0" text="Sign Up" />
-   <Button layoutX="6.0" layoutY="6.0" mnemonicParsing="false" onAction="#goBack" prefHeight="36.0" prefWidth="96.0" text="Back" />
-   <StackPane layoutX="984.0" layoutY="472.0" prefHeight="187.0" prefWidth="223.0">
-      <children>
-         <ImageView fitHeight="189.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-               <Image url="@../images/Unawatuna.jpg" />
-            </image>
-         </ImageView>
-         <Label styleClass="labelAdd" text="Unawatuna beach" />
-      </children>
-   </StackPane>
-
-
-</Pane>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="1106.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tourist_explorer.controllers.ContentController">
+   <children>
+      <AnchorPane prefHeight="728.0" prefWidth="1156.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6d6ce" height="86.0" layoutX="-13.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1529.0" />
+            <Label layoutX="203.0" layoutY="20.0" prefHeight="84.0" prefWidth="970.0" text="Choose Your Amazing Destination" textAlignment="CENTER">
+               <font>
+                  <Font name="Bodoni MT" size="54.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="184.0" fitWidth="284.0" layoutX="1062.0" layoutY="126.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/download (3).jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="184.0" fitWidth="283.0" layoutX="609.0" layoutY="126.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/download (2).jpeg" />
+               </image></ImageView>
+            <ImageView fitHeight="184.0" fitWidth="282.0" layoutX="155.0" layoutY="126.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/download (6).jpeg" />
+               </image></ImageView>
+            <ImageView fitHeight="187.0" fitWidth="281.0" layoutX="155.0" layoutY="444.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/download (4).jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="188.0" fitWidth="282.0" layoutX="609.0" layoutY="444.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/download (5).jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="189.0" fitWidth="282.0" layoutX="1065.0" layoutY="444.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/download.jpeg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c76" height="63.0" layoutX="155.0" layoutY="189.0" opacity="0.63" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="284.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c76" height="54.0" layoutX="608.0" layoutY="193.0" opacity="0.63" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="285.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c76" height="49.0" layoutX="1062.0" layoutY="193.0" opacity="0.63" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="284.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c76" height="63.0" layoutX="1066.0" layoutY="505.0" opacity="0.63" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="281.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c76" height="57.0" layoutX="610.0" layoutY="507.0" opacity="0.63" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="280.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#626c76" height="56.0" layoutX="155.0" layoutY="507.0" opacity="0.63" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="280.0" />
+            <Label layoutX="209.0" layoutY="199.0" text="MIRISSA" textFill="WHITE">
+               <font>
+                  <Font name="AdobeKaitiStd-Regular" size="46.0" />
+               </font>
+            </Label>
+            <Label layoutX="662.0" layoutY="198.0" text="THALPE" textFill="WHITE">
+               <font>
+                  <Font name="AdobeKaitiStd-Regular" size="46.0" />
+               </font>
+            </Label>
+            <Label layoutX="1094.0" layoutY="197.0" text="NIL WELLA" textFill="WHITE">
+               <font>
+                  <Font name="AdobeKaitiStd-Regular" size="43.0" />
+               </font>
+            </Label>
+            <Label layoutX="1070.0" layoutY="513.0" text="HIIKKADUWA" textFill="WHITE">
+               <font>
+                  <Font name="AdobeKaitiStd-Regular" size="43.0" />
+               </font>
+            </Label>
+            <Label layoutX="621.0" layoutY="514.0" text="USSANGODA" textFill="WHITE">
+               <font>
+                  <Font name="AdobeKaitiStd-Regular" size="45.0" />
+               </font>
+            </Label>
+            <Label layoutX="197.0" layoutY="513.0" text="PANAMA" textFill="WHITE">
+               <font>
+                  <Font name="AdobeKaitiStd-Regular" size="49.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="41.0" layoutX="155.0" layoutY="326.0" opacity="0.75" stroke="BLACK" strokeDashOffset="1.0" strokeType="INSIDE" strokeWidth="0.0" width="283.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="41.0" layoutX="1065.0" layoutY="650.0" opacity="0.75" stroke="BLACK" strokeDashOffset="1.0" strokeType="INSIDE" strokeWidth="0.0" width="283.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="41.0" layoutX="609.0" layoutY="651.0" opacity="0.75" stroke="BLACK" strokeDashOffset="1.0" strokeType="INSIDE" strokeWidth="0.0" width="283.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="41.0" layoutX="1066.0" layoutY="325.0" opacity="0.75" stroke="BLACK" strokeDashOffset="1.0" strokeType="INSIDE" strokeWidth="0.0" width="283.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="41.0" layoutX="609.0" layoutY="326.0" opacity="0.75" stroke="BLACK" strokeDashOffset="1.0" strokeType="INSIDE" strokeWidth="0.0" width="283.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="41.0" layoutX="155.0" layoutY="650.0" opacity="0.75" stroke="BLACK" strokeDashOffset="1.0" strokeType="INSIDE" strokeWidth="0.0" width="283.0" />
+            <Label fx:id="mirissabtn" layoutX="255.0" layoutY="326.0" text="CHECK" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="nilwellabtn" layoutX="1163.0" layoutY="326.0" text="CHECK" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="thalpebtn" layoutX="705.0" layoutY="327.0" text="CHECK" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="hikkaduwabtn" layoutX="1158.0" layoutY="653.0" text="CHECK" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="ussangodabtn" layoutX="701.0" layoutY="653.0" text="CHECK" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="panamabtn" layoutX="252.0" layoutY="653.0" text="CHECK" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Circle fill="#d2dae1" layoutX="82.0" layoutY="60.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fx:id="backbtn" fitHeight="46.0" fitWidth="64.0" layoutX="50.0" layoutY="44.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Untitled-1.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="71.0" fitWidth="70.0" layoutX="1273.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#login">
+               <Image url="@../images/login.jpg" />
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="71.0" fitWidth="70.0" layoutX="1366.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#signUp">
+               <Image url="@../images/reg.jpg" />
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

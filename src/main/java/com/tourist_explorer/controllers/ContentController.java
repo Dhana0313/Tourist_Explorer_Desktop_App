@@ -2,9 +2,10 @@ package com.tourist_explorer.controllers;
 
 import com.tourist_explorer.Main;
 import javafx.event.ActionEvent;
+import javafx.scene.input.MouseEvent;
 
 public class ContentController {
-    public void goBack(ActionEvent event) {
+    public void goBack(MouseEvent mouseEvent) {
         try{
             Main.changeScene("view/Welcome.fxml");
         } catch (Exception e){
@@ -12,7 +13,7 @@ public class ContentController {
         }
     }
 
-    public void signUp(ActionEvent event) {
+    public void signUp(MouseEvent mouseEvent) {
         try{
             Main.changLogSign("view/SignupView.fxml");
         } catch (Exception e){
@@ -20,7 +21,7 @@ public class ContentController {
         }
     }
 
-    public void login(ActionEvent event) {
+    public void login(MouseEvent mouseEvent) {
         try{
             Main.changLogSign("view/LoginView.fxml");
         } catch (Exception e){
