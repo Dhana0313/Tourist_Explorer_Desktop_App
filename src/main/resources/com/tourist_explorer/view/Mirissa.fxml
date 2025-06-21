@@ -9,7 +9,7 @@
 
 <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1107.0" prefWidth="1510.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
   <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="893.0" prefWidth="1445.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1106.0" prefWidth="1456.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" height="104.0" stroke="BLACK" strokeType="INSIDE" width="1444.0">
                <fill>
@@ -69,18 +69,45 @@
                   <Font size="30.0" />
                </font>
             </Label>
-            <VBox layoutX="241.0" layoutY="731.0" prefHeight="237.0" prefWidth="187.0">
+            <VBox layoutX="238.0" layoutY="731.0" prefHeight="328.0" prefWidth="200.0">
                <children>
-                  <ImageView fitHeight="232.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true">
+                  <StackPane prefHeight="53.0" prefWidth="191.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="35.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                        <Label prefHeight="28.0" prefWidth="180.0" text="           Surfing" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <ImageView fitHeight="193.0" fitWidth="191.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/surfing.jpg" />
                      </image>
                   </ImageView>
-                  <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="187.0" text="ADD TO CART">
+                  <TextArea prefHeight="200.0" prefWidth="200.0" text="Only 1 item rent at time&#10;Rental Price = LKR 1000 &#10;    per hour" />
+                  <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="194.0" text="ADD TO CART">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
                </children></VBox>
+            <VBox layoutX="903.0" layoutY="731.0" prefHeight="325.0" prefWidth="356.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6afb9" height="34.0" stroke="BLACK" strokeType="INSIDE" width="356.0" />
+                  <ImageView fitHeight="172.0" fitWidth="355.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/boatWhale.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextArea prefHeight="70.0" prefWidth="200.0" text="Time - 4.30 P.M&#10;* This works only weekends.&#10;LKR 7500 per ride for 1 person" />
+                  <Button mnemonicParsing="false" prefHeight="61.0" prefWidth="414.0" text="ADD TO CART">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
          </children></AnchorPane>
   </content>
 </ScrollPane>
