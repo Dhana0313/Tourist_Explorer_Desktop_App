@@ -6,8 +6,9 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1107.0" prefWidth="1510.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1107.0" prefWidth="1510.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tourist_explorer.controllers.ContentController">
   <content>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1106.0" prefWidth="1456.0">
          <children>
@@ -86,21 +87,30 @@
                         <Image url="@../images/surfing.jpg" />
                      </image>
                   </ImageView>
-                  <TextArea prefHeight="200.0" prefWidth="200.0" text="Only 1 item rent at time&#10;Rental Price = LKR 1000 &#10;    per hour" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" text="Only 1 item rent at time&#10;Rental Price = LKR 1000 &#10;    per hour" editable="false"/>
                   <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="194.0" text="ADD TO CART">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
                </children></VBox>
-            <VBox layoutX="903.0" layoutY="731.0" prefHeight="325.0" prefWidth="356.0">
+            <VBox layoutX="903.0" layoutY="713.0" prefHeight="324.0" prefWidth="274.0">
                <children>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6afb9" height="34.0" stroke="BLACK" strokeType="INSIDE" width="356.0" />
-                  <ImageView fitHeight="172.0" fitWidth="355.0" pickOnBounds="true" preserveRatio="true">
+                  <StackPane prefHeight="84.0" prefWidth="356.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="41.0" stroke="BLACK" strokeType="INSIDE" width="275.0" />
+                        <Label text="Whale Watching" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <ImageView fitHeight="134.0" fitWidth="273.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/boatWhale.jpg" />
                      </image>
                   </ImageView>
-                  <TextArea prefHeight="70.0" prefWidth="200.0" text="Time - 4.30 P.M&#10;* This works only weekends.&#10;LKR 7500 per ride for 1 person" />
+                  <TextArea prefHeight="70.0" prefWidth="200.0" text="Time - 4.30 P.M&#10;* This works only weekends.&#10;LKR 7500 per ride for 1 person" editable="false"/>
                   <Button mnemonicParsing="false" prefHeight="61.0" prefWidth="414.0" text="ADD TO CART">
                      <font>
                         <Font size="18.0" />
@@ -108,6 +118,15 @@
                   </Button>
                </children>
             </VBox>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a6afb9" height="84.0" layoutX="528.0" layoutY="811.0" stroke="#c96060" strokeType="INSIDE" width="274.0" />
+            <ImageView fitHeight="40.0" fitWidth="45.0" layoutX="50.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#goBackk">
+               <image>
+                  <Image url="@../images/Untitled-1.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
          </children></AnchorPane>
   </content>
 </ScrollPane>

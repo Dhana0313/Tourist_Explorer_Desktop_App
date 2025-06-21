@@ -37,4 +37,12 @@ public class ContentController {
         }
     }
 
+    public void goBackk(MouseEvent mouseEvent) {
+        try{
+            Main.changeScene("view/Content.fxml");
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
 }
