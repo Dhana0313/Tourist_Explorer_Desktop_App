@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="787.0" prefWidth="1461.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1107.0" prefWidth="1510.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
   <content>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="893.0" prefWidth="1445.0">
          <children>
@@ -38,7 +39,7 @@
                   <Font size="23.0" />
                </font>
             </Label>
-            <TextArea layoutX="34.0" layoutY="214.0" prefHeight="114.0" prefWidth="663.0" editable="false" text="Mirissa Beach is a crescent-shaped stretch of golden sand, fringed with palm trees and lapped by &#10;clear, warm waters. It's ideal for sunbathing, swimming, and leisurely beach walks. The beach's &#10;relaxed vibe makes it a perfect spot for unwinding and enjoying the natural beauty.&#10;">
+            <TextArea editable="false" layoutX="34.0" layoutY="214.0" prefHeight="114.0" prefWidth="663.0" text="Mirissa Beach is a crescent-shaped stretch of golden sand, fringed with palm trees and lapped by &#10;clear, warm waters. It's ideal for sunbathing, swimming, and leisurely beach walks. The beach's &#10;relaxed vibe makes it a perfect spot for unwinding and enjoying the natural beauty.&#10;">
                <font>
                   <Font size="14.0" />
                </font>
@@ -48,7 +49,7 @@
                   <Font size="23.0" />
                </font>
             </Label>
-            <TextArea layoutX="770.0" layoutY="212.0" prefHeight="350.0" prefWidth="609.0" editable="false" text="Whale Watching: Mirissa is one of the best places in the world to see blue whales, s&#10;perm whales, and orcas. The peak season runs from November to April, with morning &#10;tours offering the best chances for sightings.&#10;&#10;Surfing: The waves here are suitable for surfers of all levels, especially from November to &#10;March. Several surf schools offer lessons and rentals. &#10;&#10;Parrot Rock: A rocky outcrop that provides stunning views of the beach and is a favorite &#10;for drone photography.&#10;&#10;Coconut Tree Hill: A lateritic headland offering panoramic views of the ocean and &#10;surrounding area. It's a popular spot for sunrise and sunset photography. &#10;&#10;Secret Beach: A secluded cove surrounded by rocks, offering a tranquil swimming &#10;experience away from the main beach.&#10;&#10;">
+            <TextArea editable="false" layoutX="770.0" layoutY="212.0" prefHeight="350.0" prefWidth="609.0" text="Whale Watching: Mirissa is one of the best places in the world to see blue whales, s&#10;perm whales, and orcas. The peak season runs from November to April, with morning &#10;tours offering the best chances for sightings.&#10;&#10;Surfing: The waves here are suitable for surfers of all levels, especially from November to &#10;March. Several surf schools offer lessons and rentals. &#10;&#10;Parrot Rock: A rocky outcrop that provides stunning views of the beach and is a favorite &#10;for drone photography.&#10;&#10;Coconut Tree Hill: A lateritic headland offering panoramic views of the ocean and &#10;surrounding area. It's a popular spot for sunrise and sunset photography. &#10;&#10;Secret Beach: A secluded cove surrounded by rocks, offering a tranquil swimming &#10;experience away from the main beach.&#10;&#10;">
                <font>
                   <Font size="14.0" />
                </font></TextArea>
@@ -57,7 +58,7 @@
                <font>
                   <Font size="23.0" />
                </font></Label>
-            <TextArea layoutX="34.0" layoutY="387.0" prefHeight="176.0" prefWidth="661.0" editable="false" text="The ideal time to visit Mirissa is from November to April, when the weather is sunny, and the seas &#10;are calm, providing ideal conditions for beach activities, whale watching, and water sports. The &#10;monsoon Season typically brings rain and rough seas from May to October.">
+            <TextArea editable="false" layoutX="34.0" layoutY="387.0" prefHeight="176.0" prefWidth="661.0" text="The ideal time to visit Mirissa is from November to April, when the weather is sunny, and the seas &#10;are calm, providing ideal conditions for beach activities, whale watching, and water sports. The &#10;monsoon Season typically brings rain and rough seas from May to October.">
                <font>
                   <Font size="14.0" />
                </font>
@@ -68,6 +69,18 @@
                   <Font size="30.0" />
                </font>
             </Label>
+            <VBox layoutX="241.0" layoutY="731.0" prefHeight="237.0" prefWidth="187.0">
+               <children>
+                  <ImageView fitHeight="232.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/surfing.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="187.0" text="ADD TO CART">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+               </children></VBox>
          </children></AnchorPane>
   </content>
 </ScrollPane>
