@@ -13,13 +13,25 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         primaryStage = stage;
-        changeScene("LoginView.fxml");
+        primaryStage.setResizable(false);
+        changeScene("view/Welcome.fxml");
     }
 
     public static void changeScene(String fxmlFile) throws Exception {
         Parent pane = FXMLLoader.load(Main.class.getResource(fxmlFile));
         primaryStage.setScene(new Scene(pane));
         primaryStage.setTitle("Boat Booking System");
+        primaryStage.setWidth(1460);
+        primaryStage.setHeight(820);
+        primaryStage.show();
+    }
+
+    public static void changLogSign(String fxmlFile) throws Exception {
+        Parent pane = FXMLLoader.load(Main.class.getResource(fxmlFile));
+        primaryStage.setScene(new Scene(pane));
+        primaryStage.setTitle("Boat Booking System");
+        primaryStage.setWidth(600);
+        primaryStage.setHeight(820);
         primaryStage.show();
     }
 

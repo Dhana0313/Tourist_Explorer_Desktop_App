@@ -44,7 +44,7 @@ public class LoginController {
 
             if (resultSet.next()) {
                 // Successful login
-                Main.changeScene("MainDashboard.fxml");
+                Main.changLogSign("view/MainDashboard.fxml");
             } else {
                 // Failed login
                 showAlert("Login Failed", "Invalid username or password.");
@@ -65,7 +65,16 @@ public class LoginController {
     @FXML
     private void goToSignup(ActionEvent event) {
         try {
-            Main.changeScene("SignupView.fxml");
+            Main.changLogSign("view/SignupView.fxml");
+        } catch (Exception e) {
+            e.printStackTrace();
+            showAlert("Navigation Error", "Unable to open signup screen.");
+        }
+    }
+
+    public void goBackContent(ActionEvent event) {
+        try {
+            Main.changeScene("view/Content.fxml");
         } catch (Exception e) {
             e.printStackTrace();
             showAlert("Navigation Error", "Unable to open signup screen.");

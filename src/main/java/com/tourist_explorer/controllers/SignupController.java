@@ -39,7 +39,7 @@ public class SignupController {
         DatabaseConnection connectNow = new DatabaseConnection();
         Connection connectDB = connectNow.getConnection();
 
-        String insertQuery = "INSERT INTO users(username, password, email) VALUES(?, ?, ?)";
+        String insertQuery = "INSERT INTO users(username, password) VALUES(?, ?, ?)";
 
         try {
             PreparedStatement statement = connectDB.prepareStatement(insertQuery);
@@ -51,7 +51,7 @@ public class SignupController {
 
             if (rowsInserted > 0) {
                 showAlert("Success", "Account created successfully. You can now log in.");
-                Main.changeScene("LoginView.fxml");
+                Main.changLogSign("view/LoginView.fxml");
             } else {
                 showAlert("Signup Failed", "Could not create user. Try again.");
             }
@@ -70,10 +70,19 @@ public class SignupController {
     @FXML
     private void goToLogin(ActionEvent event) {
         try {
-            Main.changeScene("LoginView.fxml");
+            Main.changLogSign("view/LoginView.fxml");
         } catch (Exception e) {
             e.printStackTrace();
             showAlert("Navigation Error", "Unable to load login screen.");
+        }
+    }
+
+    public void goBackContent(ActionEvent event) {
+        try {
+            Main.changeScene("view/Content.fxml");
+        } catch (Exception e) {
+            e.printStackTrace();
+            showAlert("Navigation Error", "Unable to open signup screen.");
         }
     }
 

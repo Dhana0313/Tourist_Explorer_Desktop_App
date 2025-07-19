@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.Cursor?>
+
+<StackPane prefHeight="720" prefWidth="1280" stylesheets="@../css/Backgroundstyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tourist_explorer.controllers.WelcomeController">
+
+   <!-- Semi-transparent overlay -->
+   <Rectangle fill="rgba(0,0,0,0.4)" height="1080" width="1920" />
+
+   <VBox alignment="CENTER" spacing="20">
+      <Label style="-fx-text-fill: white; -fx-effect: dropshadow(one-pass-box, black, 4, 0, 2, 2);" text="Welcome to Your Ocean Adventure!">
+         <font>
+            <Font name="Agency FB Bold" size="48.0" />
+         </font>
+      </Label>
+
+      <Text style="-fx-fill: white; -fx-effect: dropshadow(one-pass-box, black, 2, 0, 1, 1);" text="Discover the Best of the Beach, All in One Place! Plan your perfect seaside adventure with real-time info on attractions, boat rides, and activity packages. Easy to explore. Simple to book." textAlignment="CENTER" wrappingWidth="500.0">
+         <font>
+            <Font name="Bell MT Italic" size="20.0" />
+         </font>
+      </Text>
+
+      <Text style="-fx-fill: #FFD700; -fx-effect: dropshadow(one-pass-box, black, 2, 0, 1, 1);" text="Your beach journey begins here">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Text>
+
+      <Text style="-fx-fill: #FFD700; -fx-effect: dropshadow(one-pass-box, black, 2, 0, 1, 1);" text="Explore, book, and enjoy!">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+      </Text>
+
+      <Button prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #1E3A8A; -fx-text-fill: white; -fx-background-radius: 20;" text="Explore more" onAction="#goToContent">
+         <font>
+            <Font name="Book Antiqua Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </VBox>
+
+</StackPane>
