@@ -79,7 +79,7 @@ public class SignupController {
 
     public void goBackContent(ActionEvent event) {
         try {
-            Main.changeScene("view/Content.fxml");
+            Main.changeScene("view/Welcome.fxml");
         } catch (Exception e) {
             e.printStackTrace();
             showAlert("Navigation Error", "Unable to open signup screen.");

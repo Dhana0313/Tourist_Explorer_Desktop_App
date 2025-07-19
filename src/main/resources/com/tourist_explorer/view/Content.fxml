@@ -7,7 +7,6 @@
 
 <AnchorPane prefHeight="720" prefWidth="1280" style="-fx-background-color: linear-gradient(to bottom right, #56CCF2, #2F80ED); -fx-padding: 30;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tourist_explorer.controllers.ContentController">
 
-    <Button mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: rgba(255, 255, 255, 0.2); -fx-background-radius: 15; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8 20; -fx-border-color: rgba(255, 255, 255, 0.4); -fx-border-radius: 15; -fx-border-width: 1; -fx-cursor: hand;" text="← Back" AnchorPane.leftAnchor="-15" AnchorPane.topAnchor="-15" />
 
     <VBox alignment="CENTER" layoutX="106.0" layoutY="79.0" prefHeight="650.0" prefWidth="1245.0" spacing="20" style="-fx-background-color: rgba(255, 255, 255, 0.15); -fx-background-radius: 20; -fx-padding: 40 50; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 20, 0, 0, 0);">
       <children>

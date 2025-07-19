@@ -6,9 +6,9 @@
 
 <AnchorPane prefHeight="720" prefWidth="1280" style="-fx-background-color: linear-gradient(to bottom right, #56CCF2, #2F80ED); -fx-padding: 30;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.tourist_explorer.controllers.SignupController">
 
-    <Button mnemonicParsing="false" onAction="#goBackContent" style="-fx-background-color: rgba(255, 255, 255, 0.2); -fx-background-radius: 15; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8 20; -fx-border-color: rgba(255, 255, 255, 0.4); -fx-border-radius: 15; -fx-border-width: 1; -fx-cursor: hand;" text="← Back" AnchorPane.leftAnchor="-15" AnchorPane.topAnchor="-15" />
+    <Button mnemonicParsing="false" onAction="#goBackContent" style="-fx-background-color: rgba(255, 255, 255, 0.2); -fx-background-radius: 15; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8 20; -fx-border-color: rgba(255, 255, 255, 0.4); -fx-border-radius: 15; -fx-border-width: 1; -fx-cursor: hand;" text="← Back" AnchorPane.leftAnchor="350" AnchorPane.topAnchor="0" />
 
-    <VBox alignment="CENTER" layoutX="70.0" layoutY="55.0" prefHeight="650.0" prefWidth="450.0" spacing="20" style="-fx-background-color: rgba(255, 255, 255, 0.15); -fx-background-radius: 20; -fx-padding: 40 50; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 20, 0, 0, 0);" >
+    <VBox alignment="CENTER" layoutX="500" layoutY="55.0" prefHeight="650.0" prefWidth="450.0" spacing="20" style="-fx-background-color: rgba(255, 255, 255, 0.15); -fx-background-radius: 20; -fx-padding: 40 50; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 20, 0, 0, 0);" >
 
         <!-- Logo or image -->
         <ImageView fitHeight="120" fitWidth="120">
