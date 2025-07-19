@@ -39,13 +39,13 @@ public class SignupController {
         DatabaseConnection connectNow = new DatabaseConnection();
         Connection connectDB = connectNow.getConnection();
 
-        String insertQuery = "INSERT INTO users(username, password, email) VALUES(?, ?, ?)";
+        String insertQuery = "INSERT INTO users(username, password) VALUES(?, ?)";
 
         try {
             PreparedStatement statement = connectDB.prepareStatement(insertQuery);
             statement.setString(1, username);
             statement.setString(2, password);  // Optionally hash this
-            statement.setString(3, email);
+
 
             int rowsInserted = statement.executeUpdate();
 
