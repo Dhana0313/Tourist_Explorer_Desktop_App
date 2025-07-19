@@ -7,7 +7,7 @@ import javafx.scene.input.MouseEvent;
 public class ContentController {
     public void goBack(ActionEvent actionEvent) {
         try{
-            Main.changeScene("view/Welcome.fxml");
+            Main.changeScene("view/Content.fxml");
         } catch (Exception e){
             e.printStackTrace();
         }
