@@ -39,7 +39,7 @@ public class SignupController {
         DatabaseConnection connectNow = new DatabaseConnection();
         Connection connectDB = connectNow.getConnection();
 
-        String insertQuery = "INSERT INTO users(username, password) VALUES(?, ?, ?)";
+        String insertQuery = "INSERT INTO users(username, password, email) VALUES(?, ?, ?)";
 
         try {
             PreparedStatement statement = connectDB.prepareStatement(insertQuery);
