@@ -5,7 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.input.MouseEvent;
 
 public class ContentController {
-    public void goBack(MouseEvent mouseEvent) {
+    public void goBack(ActionEvent actionEvent) {
         try{
             Main.changeScene("view/Welcome.fxml");
         } catch (Exception e){
@@ -21,7 +21,7 @@ public class ContentController {
         }
     }
 
-    public void login(MouseEvent mouseEvent) {
+    public void login(ActionEvent actionEvent) {
         try{
             Main.changLogSign("view/LoginView.fxml");
         } catch (Exception e){
@@ -31,7 +31,7 @@ public class ContentController {
 
     public void pageLoad(MouseEvent mouseEvent) {
         try{
-            Main.changeScene("view/Mirissa.fxml");
+            Main.changeScene("view/MirissaBeach.fxml");
         }catch (Exception e){
             e.printStackTrace();
         }
