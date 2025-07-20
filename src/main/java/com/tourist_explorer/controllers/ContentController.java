@@ -7,15 +7,15 @@ import javafx.scene.input.MouseEvent;
 public class ContentController {
     public void goBack(ActionEvent actionEvent) {
         try{
-            Main.changeScene("view/Content.fxml");
+            Main.changeScene("view/Welcome.fxml");
         } catch (Exception e){
             e.printStackTrace();
         }
     }
 
-    public void signUp(MouseEvent mouseEvent) {
+    public void signUp(ActionEvent actionEvent) {
         try{
-            Main.changLogSign("view/SignupView.fxml");
+            Main.changLogSign("view/SignUpView.fxml");
         } catch (Exception e){
             e.printStackTrace();
         }
@@ -37,9 +37,25 @@ public class ContentController {
         }
     }
 
-    public void goBackk(MouseEvent mouseEvent) {
+    public void backToMain(ActionEvent actionEvent) {
         try{
             Main.changeScene("view/Content.fxml");
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public void addToCart(ActionEvent actionEvent) {
+        try{
+            Main.changeScene("view/Cart.fxml");
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public void backFromCart(ActionEvent actionEvent) {
+        try{
+            Main.changeScene("view/MirissaBeach.fxml");
         } catch (Exception e){
             e.printStackTrace();
         }
