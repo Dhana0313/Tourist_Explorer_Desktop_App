@@ -49,7 +49,7 @@ public class ContentController {
         }
     }
 
-    public void backToMain(ActionEvent actionEvent) {
+    public void backToMain(MouseEvent actionEvent) {
         try{
             Main.changeScene("view/Content.fxml");
         } catch (Exception e){
