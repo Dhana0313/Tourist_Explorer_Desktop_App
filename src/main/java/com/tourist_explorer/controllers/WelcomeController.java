@@ -12,7 +12,7 @@ public class WelcomeController {
     @FXML
     protected void goToContent(ActionEvent event) {
         try {
-            Main.changLogSign("view/Content.fxml");
+            Main.changLogSign("view/LoginView.fxml");
         } catch (Exception e) {
             e.printStackTrace();
             //showAlert("Navigation Error", "Unable to load content screen.");

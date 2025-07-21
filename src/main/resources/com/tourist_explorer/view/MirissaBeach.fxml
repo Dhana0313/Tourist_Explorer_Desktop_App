@@ -1,85 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" style="-fx-background-color: linear-gradient(to bottom right, #56CCF2, #2F80ED); -fx-padding: 30;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tourist_explorer.controllers.ContentController">
-
-    <Button mnemonicParsing="false" onAction="#backToMain" style="-fx-background-color: rgba(255, 255, 255, 0.2); -fx-background-radius: 15; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8 20; -fx-border-color: rgba(255, 255, 255, 0.4); -fx-border-radius: 15; -fx-border-width: 1; -fx-cursor: hand;" text="← Back" AnchorPane.leftAnchor="-15" AnchorPane.topAnchor="-15" />
-
-    <!--<VBox alignment="CENTER" layoutX="41.0" layoutY="79.0" prefHeight="650.0" prefWidth="1395.0" spacing="20"  />-->
-
-
-    <Label layoutX="598.0" layoutY="-2.0" prefHeight="72.0" prefWidth="218.0" style="-fx-font-size: 50px; -fx-font-weight: bold; -fx-text-fill: white;" text="MIRISSA">
-        <font>
-            <Font size="30.0" />
-        </font>
-    </Label>
-
-    <ScrollPane layoutX="72.0" layoutY="70.0" prefHeight="681.0" prefWidth="1317.0"
-                style="-fx-background-color: rgba(255, 255, 255, 0.15); -fx-background-radius: 20; -fx-padding: 40 50; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 20, 0, 0, 0);"
-                vvalue="1.0">
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1165.0" prefWidth="1203.0">
-            <Label layoutX="59.0" layoutY="58.0" text="🏖️ Beach OverView">
-                <font>
-                    <Font size="22.0"/>
-                </font>
-            </Label>
-            <TextArea editable="false" layoutX="92.0" layoutY="105.0" prefHeight="147.0" prefWidth="434.0"
-                      text="Mirissa Beach is a crescent-shaped stretch of golden sand, fringed &#10;with palm trees and lapped by clear, warm waters. It's ideal for s&#10;unbathing, swimming, and leisurely beach walks. The beach's &#10;relaxed vibe makes it a perfect spot for unwinding and enjoying the &#10;natural beauty.&#10;"/>
-            <Label layoutX="76.0" layoutY="306.0" prefHeight="32.0" prefWidth="209.0" text=" Best Time To Visit">
-                <font>
-                    <Font size="22.0"/>
-                </font>
-            </Label>
-            <TextArea editable="false" layoutX="92.0" layoutY="350.0" prefHeight="165.0" prefWidth="435.0"
-                      text="The ideal time to visit Mirissa is from November to April, when the &#10;weather is sunny, and the seas are calm, providing ideal conditions&#10;for beach activities, whale watching, and water sports. &#10;The monsoon Season typically brings rain and rough seas from&#10;May to October."/>
-            <Label layoutX="661.0" layoutY="58.0" text="Activities and Attractions">
-                <font>
-                    <Font size="22.0"/>
-                </font>
-            </Label>
-            <TextArea editable="false" layoutX="679.0" layoutY="116.0" prefHeight="397.0" prefWidth="446.0"
-                      text="Whale Watching: Mirissa is one of the best places in the world to see &#10;blue whales, sperm whales, and orcas. The peak season runs from &#10;November to April, with morning tours offering the best chances for &#10;sightings. Surfing: The waves here are suitable for surfers of all levels,&#10; especially from November to March. Several surf schools offer&#10; lessons and rentals. Parrot Rock: A rocky outcrop that provides &#10;stunning views of the beach and is a favorite for drone photography.&#10;Coconut Tree Hill: A lateritic headland offering panoramic views of&#10; the ocean and surrounding area. It's a popular spot for sunrise and &#10;sunset photography. Secret Beach: A secluded cove surrounded by &#10;rocks, offering a tranquil swimming experience away from the main &#10;beach.&#10;&#10;"/>
-            <Button layoutX="1125.0" layoutY="8.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="26.0"
-                    prefWidth="69.0" text="CART"/>
-            <Label layoutX="507.0" layoutY="568.0" text="Packages">
-                <font>
-                    <Font size="35"/>
-                </font>
-            </Label>
-            <Pane layoutX="109.0" layoutY="672.0" prefHeight="320.0" prefWidth="218.0">
-                <Label layoutX="72.0" layoutY="14.0" text="Surfing">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1107.0" prefWidth="1510.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tourist_explorer.controllers.ContentController">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1106.0" prefWidth="1456.0">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" height="104.0" stroke="BLACK" strokeType="INSIDE" width="1444.0">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.3890107274055481" green="0.6095131039619446" blue="0.8157894611358643" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Rectangle>
+                <Label layoutX="352.0" layoutY="1.0" prefHeight="102.0" prefWidth="675.0" text="          MIRISSA" textFill="WHITE">
                     <font>
-                        <Font size="22.0"/>
+                        <Font size="72.0" />
                     </font>
                 </Label>
-                <ImageView fitHeight="181.0" fitWidth="150.0" layoutX="35.0" layoutY="57.0" pickOnBounds="true"
-                           preserveRatio="true">
-                    <Image url="@../images/surfing.jpg"/>
-                </ImageView>
-                <TextArea editable="false" layoutX="10.0" layoutY="216.0" prefHeight="53.0" prefWidth="200.0"
-                          text="Rental Price = LKR 1000 &#10;per hour"/>
-                <Button layoutX="79.0" layoutY="280.0" mnemonicParsing="false" text="ADD"/>
-            </Pane>
-            <Pane layoutX="560.0" layoutY="670.0" prefHeight="302.0" prefWidth="260.0">
-                <Label layoutX="37.0" layoutY="14.0" text="Whale Watching">
+
+
+                <Label layoutX="34.0" layoutY="170.0" prefHeight="44.0" prefWidth="222.0" text="🏖️ Beach Overview">
                     <font>
-                        <Font size="22.0"/>
+                        <Font size="23.0" />
                     </font>
                 </Label>
-                <ImageView fitHeight="137.0" fitWidth="244.0" layoutX="8.0" layoutY="59.0" pickOnBounds="true"
-                           preserveRatio="true">
-                    <Image url="@../images/boatWhale.jpg"/>
+                <TextArea editable="false" layoutX="34.0" layoutY="214.0" prefHeight="114.0" prefWidth="663.0" text="Mirissa Beach is a crescent-shaped stretch of golden sand, fringed with palm trees and lapped by &#10;clear, warm waters. It's ideal for sunbathing, swimming, and leisurely beach walks. The beach's &#10;relaxed vibe makes it a perfect spot for unwinding and enjoying the natural beauty.&#10;">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextArea>
+                <Label layoutX="771.0" layoutY="183.0" prefHeight="33.0" prefWidth="303.0" text="Activities &amp; Attractions">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+                <TextArea editable="false" layoutX="770.0" layoutY="212.0" prefHeight="350.0" prefWidth="609.0" text="Whale Watching: Mirissa is one of the best places in the world to see blue whales, s&#10;perm whales, and orcas. The peak season runs from November to April, with morning &#10;tours offering the best chances for sightings.&#10;&#10;Surfing: The waves here are suitable for surfers of all levels, especially from November to &#10;March. Several surf schools offer lessons and rentals. &#10;&#10;Parrot Rock: A rocky outcrop that provides stunning views of the beach and is a favorite &#10;for drone photography.&#10;&#10;Coconut Tree Hill: A lateritic headland offering panoramic views of the ocean and &#10;surrounding area. It's a popular spot for sunrise and sunset photography. &#10;&#10;Secret Beach: A secluded cove surrounded by rocks, offering a tranquil swimming &#10;experience away from the main beach.&#10;&#10;">
+                    <font>
+                        <Font size="14.0" />
+                    </font></TextArea>
+                <Separator layoutX="719.0" layoutY="171.0" orientation="VERTICAL" prefHeight="402.0" prefWidth="27.0" />
+                <Label layoutX="34.0" layoutY="354.0" prefHeight="33.0" prefWidth="212.0" text="Best Time to Visit">
+                    <font>
+                        <Font size="23.0" />
+                    </font></Label>
+                <TextArea editable="false" layoutX="34.0" layoutY="387.0" prefHeight="176.0" prefWidth="661.0" text="The ideal time to visit Mirissa is from November to April, when the weather is sunny, and the seas &#10;are calm, providing ideal conditions for beach activities, whale watching, and water sports. The &#10;monsoon Season typically brings rain and rough seas from May to October.">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextArea>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="73.0" layoutX="428.0" layoutY="599.0" stroke="BLACK" strokeType="INSIDE" width="472.0" />
+                <Label layoutX="455.0" layoutY="615.0" prefHeight="42.0" prefWidth="419.0" text="                 Packages" textFill="WHITE">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <VBox layoutX="238.0" layoutY="731.0" prefHeight="328.0" prefWidth="200.0">
+                    <children>
+                        <StackPane prefHeight="53.0" prefWidth="191.0">
+                            <children>
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="35.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                                <Label prefHeight="28.0" prefWidth="180.0" text="           Surfing" textFill="WHITE">
+                                    <font>
+                                        <Font size="19.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </StackPane>
+                        <ImageView fitHeight="193.0" fitWidth="191.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/surfing.jpg" />
+                            </image>
+                        </ImageView>
+                        <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" text="Only 1 item rent at time&#10;Rental Price = LKR 1000 &#10;    per hour" />
+                        <Button mnemonicParsing="false" onAction="#addSurfingToCart" prefHeight="47.0" prefWidth="194.0" text="ADD TO CART">
+                            <font>
+                                <Font size="18.0" />
+                            </font></Button>
+                    </children></VBox>
+                <VBox layoutX="903.0" layoutY="713.0" prefHeight="324.0" prefWidth="274.0">
+                    <children>
+                        <StackPane prefHeight="84.0" prefWidth="356.0">
+                            <children>
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="41.0" stroke="BLACK" strokeType="INSIDE" width="275.0" />
+                                <Label text="Whale Watching" textFill="WHITE">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </StackPane>
+                        <ImageView fitHeight="134.0" fitWidth="273.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/boatWhale.jpg" />
+                            </image>
+                        </ImageView>
+                        <TextArea editable="false" prefHeight="70.0" prefWidth="200.0" text="Time - 4.30 P.M&#10;* This works only weekends.&#10;LKR 7500 per ride for 1 person" />
+                        <Button mnemonicParsing="false" onAction="#addWhaleWatchingToCart" prefHeight="61.0" prefWidth="414.0" text="ADD TO CART">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <ImageView fitHeight="40.0" fitWidth="45.0" layoutX="50.0" layoutY="39.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/Untitled-1.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
                 </ImageView>
-                <TextArea editable="false" layoutX="5.0" layoutY="190.0" prefHeight="64.0" prefWidth="248.0"
-                          text="Time - 4.30 P.M&#10;* This works only weekends.&#10;LKR 7500 per ride for 1 person"/>
-                <Button layoutX="99.0" layoutY="262.0" mnemonicParsing="false" text="ADD"/>
-            </Pane>
-        </AnchorPane>
-    </ScrollPane>
-
-
-</AnchorPane>
+                <Button fx:id="cartButton" layoutX="1369.0" layoutY="113.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="54.0" text="🛒" onAction="#openCartPage">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+            </children></AnchorPane>
+    </content>
+</ScrollPane>
